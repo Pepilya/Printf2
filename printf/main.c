@@ -34,8 +34,39 @@ void toUpper(char *str)
 		i++;
 	}
 }
+
+char *changeUnNumType(t_spec *sp, unsigned long long d)
+{
+	char *string;
+	int base;
+
+	base = 10;
+	if (sp->type == 'X' || sp->type == 'x' || sp->type == 'p')
+		base = 16;
+	if (sp->type == 'o')
+		base = 8;
+	if (sp->mod == 0)
+		string = ft_itoa_base(d, base);
+	if (sp->mod == 1 && (sp->type == 'd' || sp->type == 'i'))
+		string = ft_itoa_base((char) d, base);
+	else if (sp->mod == 1)
+		string = ft_itoa_base((unsigned char) d, base);
+	if (sp->mod == 2 && (sp->type == 'd' || sp->type == 'i'))
+		string = ft_itoa_base((short) d, base);
+	else if (sp->mod == 2)
+		string = ft_itoa_base((unsigned short) d, base);
+	if (sp->mod == 3)
+		string = ft_itoa_base((long long) d, base);
+	if (sp->mod == 4)
+		string = ft_itoa_base((long) d, base);
+	if (sp->type == 'X')
+		toUpper(string);
+	return string;
+}
+
+
 // ОБработка значения модификаторы. Приведение типа (h hh l ll) пока работают только h и hh
-char *changeIntType(t_spec *sp, int d)
+char *changeNumType(t_spec *sp, long long d)
 {
 	char *string;
 	int base;
@@ -135,13 +166,39 @@ int isDecimal(t_spec *sp){
 }
 
 // Печать целочисленных значений
-void printNum(t_spec *sp, int d)
+void printNum(t_spec *sp, long long  d)
 {
 	char *toPrint;
 	int check;
 
 	ft_putstr(sp->text);
-	toPrint = changeIntType(sp, d);
+	toPrint = changeNumType(sp, d);
+	check = isDecimal(sp);
+	if (ft_strchr(sp->flags, '+') && check)
+	{
+		if (!ft_strchr(toPrint, '-'))
+			ft_putchar('+');
+		cutLength(sp);
+	} else if (ft_strchr(sp->flags, ' ') && check)
+	{
+		if (!ft_strchr(toPrint, '-'))
+			ft_putchar(' ');
+		cutLength(sp);
+	}
+	if (sp->acc > 0 && sp->acc > sp->width)
+		printAccuracy(sp, toPrint);
+	else
+		printWidth(sp, toPrint);
+}
+
+// Печать целочисленных значений
+void printUnnsignedNum(t_spec *sp, unsigned long long  d)
+{
+	char *toPrint;
+	int check;
+
+	ft_putstr(sp->text);
+	toPrint = changeUnNumType(sp, d);
 	check = isDecimal(sp);
 	if (ft_strchr(sp->flags, '+') && check)
 	{
@@ -334,11 +391,34 @@ t_spec *getSpec(t_spec *sp) {
 }
 
 int wrongSymbols(char c){
-	char *rightSymbols = "cspdiouxXf";
+	char *rightSymbols = "cspdiouxXfhlL";
 	char *wrongSymbols = "!$&()/<=>?@[]^|{}`~\\";
 	if ((ft_isalpha(c) || ft_strchr(wrongSymbols, c)) && !ft_strchr(rightSymbols, c))
 		return 1;
 	return 0;
+}
+
+char *isWaste(char *s, char c)
+{
+	int i;
+	int j;
+	char *dup;
+
+	dup = (char *)malloc(ft_strlen(s) + 1);
+	i = 0;
+	j = 0;
+	while (s[i])
+	{
+			if (s[i] == c && s[i + 1] != c){
+				j++;
+			}
+		dup[i] = s[j];
+		i++;
+		j++;
+	}
+	dup[i] = 0;
+	ft_strdel(&s);
+	return dup;
 }
 // Очень костыльно, надо оптимизировать. Читаем строку f.
 t_spec *checkString(const char *f) {
@@ -346,24 +426,16 @@ t_spec *checkString(const char *f) {
 	int i = 0;
 	int j = 0;
 	int startText = 0;
-	int isWrong = 0;
 	char *spec = "cspdiouxXf"; //спецификаторы типа
 	t_spec *sp = NULL;
 	while (f[i]) {
 		if (f[i] == '%' && isSpec(f, i)) {
 			j = i;
 			sp = getSpec(sp); // получаем элемент списка
-			sp->text = ft_strsub(f, startText, i - startText); // текст до спецификатора первой переменной (%s)
-			while (!ft_strchr(spec, f[i]) && f[i]){
-				if (wrongSymbols(f[i]))
-				{
-					isWrong = 1;
-					break;
-				}
+			sp->text = ft_strsub(f, startText, i - startText);// текст до спецификатора первой переменной (%s)
+			sp->text = isWaste(sp->text, '%');
+			while (!ft_strchr(spec, f[i]) && f[i] && !wrongSymbols(f[i]))
 				i++;
-			}
-			if (isWrong)
-				continue;
 			if (!f[i])
 				break;
 			startText = i + 1;
@@ -376,7 +448,8 @@ t_spec *checkString(const char *f) {
 		}
 	}
 	sp = getSpec(sp);
-	sp->text = ft_strsub(f, startText, i - startText);
+	sp->text = ft_strsub(f, startText, i - startText); // может переделать ft_strsub (чтобы сразу убирал лишний %)
+	sp->text = isWaste(sp->text, '%');
 	return sp;
 }
 // Инициализация данных структуры (связанного списка)
@@ -389,6 +462,7 @@ void init(t_spec *sp) {
 	sp->acc = 0; // точность.
 	sp->mod = 0; // модификаторы, пока работают только hh и h.
 	sp->type = 0; // тип
+	sp->isPercent = 0;
 	sp->text = NULL; // это для текста перед переменной (%s).
 	sp->next = NULL; // след узел
 	sp->prev = NULL; // предыдущий узел
@@ -401,7 +475,8 @@ void init(t_spec *sp) {
 void ft_printf(const char *f, ...) {
 	char *string;
 	char c;
-	int d;
+	long long d;
+	unsigned long long l;
 	va_list argp;
 	va_start(argp, f);
 	t_spec *sp = checkString(f); // читаем строку и записываем в список.
@@ -417,10 +492,13 @@ void ft_printf(const char *f, ...) {
 			c = va_arg(argp, char);
 			printChar(sp, c);
 		}
-		if (sp->type == 'd' || sp->type == 'i' || sp->type == 'x'
-		|| sp->type == 'X' || sp->type == 'o' || sp->type == 'u' || sp->type == 'p'){
-			d = va_arg(argp, int);
+		if (sp->type == 'd' || sp->type == 'i' || sp->type == 'p'){
+			d = va_arg(argp, long long);
 			printNum(sp, d);
+		}
+		if (sp->type == 'X' || sp->type == 'o' || sp->type == 'u' || sp->type == 'x'){
+			l = va_arg(argp, unsigned long long);
+			printUnnsignedNum(sp, l);
 		}
 		// ... добавть остальные типы!
 		sp = sp->next;
@@ -430,9 +508,9 @@ void ft_printf(const char *f, ...) {
 }
 
 int main() {
-	char x = 10;
+	long long  x = 9223372036854775800;
 	char *s = "HI I am here";
-	printf("%s %d\n", s, x);
-	ft_printf("%s %d\n", s, x);
+	//printf("%% where is mister %d\n", x);
+	ft_printf("%i\n", 9223372036854775800);
 	return 0;
 }

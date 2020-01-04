@@ -20,13 +20,6 @@
 # include <stdlib.h>
 # include "libft/libft.h"
 
-/*typedef struct		s_list
-{
-	char			*content;
-	struct s_list	*next;
-	struct s_list	*prev;
-}					t_list;*/
-
 typedef struct          s_spec{
     char *flags;
     int  width;
