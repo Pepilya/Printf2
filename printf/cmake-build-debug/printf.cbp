@@ -76,6 +76,33 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/sb/Desktop/printf/AddSpecifiers.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/sb/Desktop/printf/CreateListSpecifiers.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/sb/Desktop/printf/ParsingString.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/sb/Desktop/printf/PrintChar.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/sb/Desktop/printf/PrintNumSigned.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/sb/Desktop/printf/PrintNumSpecifiers.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/sb/Desktop/printf/PrintNumUnsigned.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/sb/Desktop/printf/PrintString.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/sb/Desktop/printf/ft_printf.c">
+			<Option target="printf"/>
+		</Unit>
 		<Unit filename="/Users/sb/Desktop/printf/libft/ft_atoi.c">
 			<Option target="printf"/>
 		</Unit>
@@ -86,6 +113,15 @@
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/sb/Desktop/printf/libft/ft_itoa.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/sb/Desktop/printf/libft/ft_itoa_base.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/sb/Desktop/printf/libft/ft_itoa_base_long.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/sb/Desktop/printf/libft/ft_itoa_base_ulong.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/sb/Desktop/printf/libft/ft_putchar.c">
@@ -121,10 +157,10 @@
 		<Unit filename="/Users/sb/Desktop/printf/libft/ft_strsub.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/sb/Desktop/printf/libft/ft_toupper.c">
+		<Unit filename="/Users/sb/Desktop/printf/libft/ft_strsub_mod.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/sb/Desktop/printf/libft/itoa_base.c">
+		<Unit filename="/Users/sb/Desktop/printf/libft/ft_toupper.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/sb/Desktop/printf/main.c">

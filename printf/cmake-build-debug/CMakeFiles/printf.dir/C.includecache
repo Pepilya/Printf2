@@ -15,16 +15,8 @@ string.h
 -
 
 /Users/sb/Desktop/printf/main.c
-stdarg.h
--
-unistd.h
--
-stdlib.h
--
 printf.h
 /Users/sb/Desktop/printf/printf.h
-stdio.h
--
 
 /Users/sb/Desktop/printf/printf.h
 sys/types.h

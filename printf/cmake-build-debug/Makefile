@@ -123,6 +123,249 @@ printf/fast:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/build
 .PHONY : printf/fast
 
+AddSpecifiers.o: AddSpecifiers.c.o
+
+.PHONY : AddSpecifiers.o
+
+# target to build an object file
+AddSpecifiers.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/AddSpecifiers.c.o
+.PHONY : AddSpecifiers.c.o
+
+AddSpecifiers.i: AddSpecifiers.c.i
+
+.PHONY : AddSpecifiers.i
+
+# target to preprocess a source file
+AddSpecifiers.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/AddSpecifiers.c.i
+.PHONY : AddSpecifiers.c.i
+
+AddSpecifiers.s: AddSpecifiers.c.s
+
+.PHONY : AddSpecifiers.s
+
+# target to generate assembly for a file
+AddSpecifiers.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/AddSpecifiers.c.s
+.PHONY : AddSpecifiers.c.s
+
+CreateListSpecifiers.o: CreateListSpecifiers.c.o
+
+.PHONY : CreateListSpecifiers.o
+
+# target to build an object file
+CreateListSpecifiers.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/CreateListSpecifiers.c.o
+.PHONY : CreateListSpecifiers.c.o
+
+CreateListSpecifiers.i: CreateListSpecifiers.c.i
+
+.PHONY : CreateListSpecifiers.i
+
+# target to preprocess a source file
+CreateListSpecifiers.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/CreateListSpecifiers.c.i
+.PHONY : CreateListSpecifiers.c.i
+
+CreateListSpecifiers.s: CreateListSpecifiers.c.s
+
+.PHONY : CreateListSpecifiers.s
+
+# target to generate assembly for a file
+CreateListSpecifiers.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/CreateListSpecifiers.c.s
+.PHONY : CreateListSpecifiers.c.s
+
+ParsingString.o: ParsingString.c.o
+
+.PHONY : ParsingString.o
+
+# target to build an object file
+ParsingString.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ParsingString.c.o
+.PHONY : ParsingString.c.o
+
+ParsingString.i: ParsingString.c.i
+
+.PHONY : ParsingString.i
+
+# target to preprocess a source file
+ParsingString.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ParsingString.c.i
+.PHONY : ParsingString.c.i
+
+ParsingString.s: ParsingString.c.s
+
+.PHONY : ParsingString.s
+
+# target to generate assembly for a file
+ParsingString.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ParsingString.c.s
+.PHONY : ParsingString.c.s
+
+PrintChar.o: PrintChar.c.o
+
+.PHONY : PrintChar.o
+
+# target to build an object file
+PrintChar.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/PrintChar.c.o
+.PHONY : PrintChar.c.o
+
+PrintChar.i: PrintChar.c.i
+
+.PHONY : PrintChar.i
+
+# target to preprocess a source file
+PrintChar.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/PrintChar.c.i
+.PHONY : PrintChar.c.i
+
+PrintChar.s: PrintChar.c.s
+
+.PHONY : PrintChar.s
+
+# target to generate assembly for a file
+PrintChar.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/PrintChar.c.s
+.PHONY : PrintChar.c.s
+
+PrintNumSigned.o: PrintNumSigned.c.o
+
+.PHONY : PrintNumSigned.o
+
+# target to build an object file
+PrintNumSigned.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/PrintNumSigned.c.o
+.PHONY : PrintNumSigned.c.o
+
+PrintNumSigned.i: PrintNumSigned.c.i
+
+.PHONY : PrintNumSigned.i
+
+# target to preprocess a source file
+PrintNumSigned.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/PrintNumSigned.c.i
+.PHONY : PrintNumSigned.c.i
+
+PrintNumSigned.s: PrintNumSigned.c.s
+
+.PHONY : PrintNumSigned.s
+
+# target to generate assembly for a file
+PrintNumSigned.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/PrintNumSigned.c.s
+.PHONY : PrintNumSigned.c.s
+
+PrintNumSpecifiers.o: PrintNumSpecifiers.c.o
+
+.PHONY : PrintNumSpecifiers.o
+
+# target to build an object file
+PrintNumSpecifiers.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/PrintNumSpecifiers.c.o
+.PHONY : PrintNumSpecifiers.c.o
+
+PrintNumSpecifiers.i: PrintNumSpecifiers.c.i
+
+.PHONY : PrintNumSpecifiers.i
+
+# target to preprocess a source file
+PrintNumSpecifiers.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/PrintNumSpecifiers.c.i
+.PHONY : PrintNumSpecifiers.c.i
+
+PrintNumSpecifiers.s: PrintNumSpecifiers.c.s
+
+.PHONY : PrintNumSpecifiers.s
+
+# target to generate assembly for a file
+PrintNumSpecifiers.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/PrintNumSpecifiers.c.s
+.PHONY : PrintNumSpecifiers.c.s
+
+PrintNumUnsigned.o: PrintNumUnsigned.c.o
+
+.PHONY : PrintNumUnsigned.o
+
+# target to build an object file
+PrintNumUnsigned.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/PrintNumUnsigned.c.o
+.PHONY : PrintNumUnsigned.c.o
+
+PrintNumUnsigned.i: PrintNumUnsigned.c.i
+
+.PHONY : PrintNumUnsigned.i
+
+# target to preprocess a source file
+PrintNumUnsigned.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/PrintNumUnsigned.c.i
+.PHONY : PrintNumUnsigned.c.i
+
+PrintNumUnsigned.s: PrintNumUnsigned.c.s
+
+.PHONY : PrintNumUnsigned.s
+
+# target to generate assembly for a file
+PrintNumUnsigned.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/PrintNumUnsigned.c.s
+.PHONY : PrintNumUnsigned.c.s
+
+PrintString.o: PrintString.c.o
+
+.PHONY : PrintString.o
+
+# target to build an object file
+PrintString.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/PrintString.c.o
+.PHONY : PrintString.c.o
+
+PrintString.i: PrintString.c.i
+
+.PHONY : PrintString.i
+
+# target to preprocess a source file
+PrintString.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/PrintString.c.i
+.PHONY : PrintString.c.i
+
+PrintString.s: PrintString.c.s
+
+.PHONY : PrintString.s
+
+# target to generate assembly for a file
+PrintString.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/PrintString.c.s
+.PHONY : PrintString.c.s
+
+ft_printf.o: ft_printf.c.o
+
+.PHONY : ft_printf.o
+
+# target to build an object file
+ft_printf.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_printf.c.o
+.PHONY : ft_printf.c.o
+
+ft_printf.i: ft_printf.c.i
+
+.PHONY : ft_printf.i
+
+# target to preprocess a source file
+ft_printf.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_printf.c.i
+.PHONY : ft_printf.c.i
+
+ft_printf.s: ft_printf.c.s
+
+.PHONY : ft_printf.s
+
+# target to generate assembly for a file
+ft_printf.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/ft_printf.c.s
+.PHONY : ft_printf.c.s
+
 libft/ft_atoi.o: libft/ft_atoi.c.o
 
 .PHONY : libft/ft_atoi.o
@@ -230,6 +473,87 @@ libft/ft_itoa.s: libft/ft_itoa.c.s
 libft/ft_itoa.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_itoa.c.s
 .PHONY : libft/ft_itoa.c.s
+
+libft/ft_itoa_base.o: libft/ft_itoa_base.c.o
+
+.PHONY : libft/ft_itoa_base.o
+
+# target to build an object file
+libft/ft_itoa_base.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_itoa_base.c.o
+.PHONY : libft/ft_itoa_base.c.o
+
+libft/ft_itoa_base.i: libft/ft_itoa_base.c.i
+
+.PHONY : libft/ft_itoa_base.i
+
+# target to preprocess a source file
+libft/ft_itoa_base.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_itoa_base.c.i
+.PHONY : libft/ft_itoa_base.c.i
+
+libft/ft_itoa_base.s: libft/ft_itoa_base.c.s
+
+.PHONY : libft/ft_itoa_base.s
+
+# target to generate assembly for a file
+libft/ft_itoa_base.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_itoa_base.c.s
+.PHONY : libft/ft_itoa_base.c.s
+
+libft/ft_itoa_base_long.o: libft/ft_itoa_base_long.c.o
+
+.PHONY : libft/ft_itoa_base_long.o
+
+# target to build an object file
+libft/ft_itoa_base_long.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_itoa_base_long.c.o
+.PHONY : libft/ft_itoa_base_long.c.o
+
+libft/ft_itoa_base_long.i: libft/ft_itoa_base_long.c.i
+
+.PHONY : libft/ft_itoa_base_long.i
+
+# target to preprocess a source file
+libft/ft_itoa_base_long.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_itoa_base_long.c.i
+.PHONY : libft/ft_itoa_base_long.c.i
+
+libft/ft_itoa_base_long.s: libft/ft_itoa_base_long.c.s
+
+.PHONY : libft/ft_itoa_base_long.s
+
+# target to generate assembly for a file
+libft/ft_itoa_base_long.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_itoa_base_long.c.s
+.PHONY : libft/ft_itoa_base_long.c.s
+
+libft/ft_itoa_base_ulong.o: libft/ft_itoa_base_ulong.c.o
+
+.PHONY : libft/ft_itoa_base_ulong.o
+
+# target to build an object file
+libft/ft_itoa_base_ulong.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_itoa_base_ulong.c.o
+.PHONY : libft/ft_itoa_base_ulong.c.o
+
+libft/ft_itoa_base_ulong.i: libft/ft_itoa_base_ulong.c.i
+
+.PHONY : libft/ft_itoa_base_ulong.i
+
+# target to preprocess a source file
+libft/ft_itoa_base_ulong.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_itoa_base_ulong.c.i
+.PHONY : libft/ft_itoa_base_ulong.c.i
+
+libft/ft_itoa_base_ulong.s: libft/ft_itoa_base_ulong.c.s
+
+.PHONY : libft/ft_itoa_base_ulong.s
+
+# target to generate assembly for a file
+libft/ft_itoa_base_ulong.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_itoa_base_ulong.c.s
+.PHONY : libft/ft_itoa_base_ulong.c.s
 
 libft/ft_putchar.o: libft/ft_putchar.c.o
 
@@ -528,6 +852,33 @@ libft/ft_strsub.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_strsub.c.s
 .PHONY : libft/ft_strsub.c.s
 
+libft/ft_strsub_mod.o: libft/ft_strsub_mod.c.o
+
+.PHONY : libft/ft_strsub_mod.o
+
+# target to build an object file
+libft/ft_strsub_mod.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_strsub_mod.c.o
+.PHONY : libft/ft_strsub_mod.c.o
+
+libft/ft_strsub_mod.i: libft/ft_strsub_mod.c.i
+
+.PHONY : libft/ft_strsub_mod.i
+
+# target to preprocess a source file
+libft/ft_strsub_mod.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_strsub_mod.c.i
+.PHONY : libft/ft_strsub_mod.c.i
+
+libft/ft_strsub_mod.s: libft/ft_strsub_mod.c.s
+
+.PHONY : libft/ft_strsub_mod.s
+
+# target to generate assembly for a file
+libft/ft_strsub_mod.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_strsub_mod.c.s
+.PHONY : libft/ft_strsub_mod.c.s
+
 libft/ft_toupper.o: libft/ft_toupper.c.o
 
 .PHONY : libft/ft_toupper.o
@@ -554,33 +905,6 @@ libft/ft_toupper.s: libft/ft_toupper.c.s
 libft/ft_toupper.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_toupper.c.s
 .PHONY : libft/ft_toupper.c.s
-
-libft/itoa_base.o: libft/itoa_base.c.o
-
-.PHONY : libft/itoa_base.o
-
-# target to build an object file
-libft/itoa_base.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/itoa_base.c.o
-.PHONY : libft/itoa_base.c.o
-
-libft/itoa_base.i: libft/itoa_base.c.i
-
-.PHONY : libft/itoa_base.i
-
-# target to preprocess a source file
-libft/itoa_base.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/itoa_base.c.i
-.PHONY : libft/itoa_base.c.i
-
-libft/itoa_base.s: libft/itoa_base.c.s
-
-.PHONY : libft/itoa_base.s
-
-# target to generate assembly for a file
-libft/itoa_base.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/itoa_base.c.s
-.PHONY : libft/itoa_base.c.s
 
 main.o: main.c.o
 
@@ -618,6 +942,33 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... printf"
+	@echo "... AddSpecifiers.o"
+	@echo "... AddSpecifiers.i"
+	@echo "... AddSpecifiers.s"
+	@echo "... CreateListSpecifiers.o"
+	@echo "... CreateListSpecifiers.i"
+	@echo "... CreateListSpecifiers.s"
+	@echo "... ParsingString.o"
+	@echo "... ParsingString.i"
+	@echo "... ParsingString.s"
+	@echo "... PrintChar.o"
+	@echo "... PrintChar.i"
+	@echo "... PrintChar.s"
+	@echo "... PrintNumSigned.o"
+	@echo "... PrintNumSigned.i"
+	@echo "... PrintNumSigned.s"
+	@echo "... PrintNumSpecifiers.o"
+	@echo "... PrintNumSpecifiers.i"
+	@echo "... PrintNumSpecifiers.s"
+	@echo "... PrintNumUnsigned.o"
+	@echo "... PrintNumUnsigned.i"
+	@echo "... PrintNumUnsigned.s"
+	@echo "... PrintString.o"
+	@echo "... PrintString.i"
+	@echo "... PrintString.s"
+	@echo "... ft_printf.o"
+	@echo "... ft_printf.i"
+	@echo "... ft_printf.s"
 	@echo "... libft/ft_atoi.o"
 	@echo "... libft/ft_atoi.i"
 	@echo "... libft/ft_atoi.s"
@@ -630,6 +981,15 @@ help:
 	@echo "... libft/ft_itoa.o"
 	@echo "... libft/ft_itoa.i"
 	@echo "... libft/ft_itoa.s"
+	@echo "... libft/ft_itoa_base.o"
+	@echo "... libft/ft_itoa_base.i"
+	@echo "... libft/ft_itoa_base.s"
+	@echo "... libft/ft_itoa_base_long.o"
+	@echo "... libft/ft_itoa_base_long.i"
+	@echo "... libft/ft_itoa_base_long.s"
+	@echo "... libft/ft_itoa_base_ulong.o"
+	@echo "... libft/ft_itoa_base_ulong.i"
+	@echo "... libft/ft_itoa_base_ulong.s"
 	@echo "... libft/ft_putchar.o"
 	@echo "... libft/ft_putchar.i"
 	@echo "... libft/ft_putchar.s"
@@ -663,12 +1023,12 @@ help:
 	@echo "... libft/ft_strsub.o"
 	@echo "... libft/ft_strsub.i"
 	@echo "... libft/ft_strsub.s"
+	@echo "... libft/ft_strsub_mod.o"
+	@echo "... libft/ft_strsub_mod.i"
+	@echo "... libft/ft_strsub_mod.s"
 	@echo "... libft/ft_toupper.o"
 	@echo "... libft/ft_toupper.i"
 	@echo "... libft/ft_toupper.s"
-	@echo "... libft/itoa_base.o"
-	@echo "... libft/itoa_base.i"
-	@echo "... libft/itoa_base.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

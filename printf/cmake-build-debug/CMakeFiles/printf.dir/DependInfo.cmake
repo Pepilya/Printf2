@@ -4,10 +4,22 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/Users/sb/Desktop/printf/AddSpecifiers.c" "/Users/sb/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/AddSpecifiers.c.o"
+  "/Users/sb/Desktop/printf/CreateListSpecifiers.c" "/Users/sb/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/CreateListSpecifiers.c.o"
+  "/Users/sb/Desktop/printf/ParsingString.c" "/Users/sb/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/ParsingString.c.o"
+  "/Users/sb/Desktop/printf/PrintChar.c" "/Users/sb/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/PrintChar.c.o"
+  "/Users/sb/Desktop/printf/PrintNumSigned.c" "/Users/sb/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/PrintNumSigned.c.o"
+  "/Users/sb/Desktop/printf/PrintNumSpecifiers.c" "/Users/sb/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/PrintNumSpecifiers.c.o"
+  "/Users/sb/Desktop/printf/PrintNumUnsigned.c" "/Users/sb/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/PrintNumUnsigned.c.o"
+  "/Users/sb/Desktop/printf/PrintString.c" "/Users/sb/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/PrintString.c.o"
+  "/Users/sb/Desktop/printf/ft_printf.c" "/Users/sb/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/ft_printf.c.o"
   "/Users/sb/Desktop/printf/libft/ft_atoi.c" "/Users/sb/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_atoi.c.o"
   "/Users/sb/Desktop/printf/libft/ft_bzero.c" "/Users/sb/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_bzero.c.o"
   "/Users/sb/Desktop/printf/libft/ft_isalpha.c" "/Users/sb/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_isalpha.c.o"
   "/Users/sb/Desktop/printf/libft/ft_itoa.c" "/Users/sb/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_itoa.c.o"
+  "/Users/sb/Desktop/printf/libft/ft_itoa_base.c" "/Users/sb/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_itoa_base.c.o"
+  "/Users/sb/Desktop/printf/libft/ft_itoa_base_long.c" "/Users/sb/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_itoa_base_long.c.o"
+  "/Users/sb/Desktop/printf/libft/ft_itoa_base_ulong.c" "/Users/sb/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_itoa_base_ulong.c.o"
   "/Users/sb/Desktop/printf/libft/ft_putchar.c" "/Users/sb/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_putchar.c.o"
   "/Users/sb/Desktop/printf/libft/ft_putchar_fd.c" "/Users/sb/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_putchar_fd.c.o"
   "/Users/sb/Desktop/printf/libft/ft_putstr.c" "/Users/sb/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_putstr.c.o"
@@ -19,8 +31,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/sb/Desktop/printf/libft/ft_strncpy.c" "/Users/sb/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_strncpy.c.o"
   "/Users/sb/Desktop/printf/libft/ft_strnew.c" "/Users/sb/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_strnew.c.o"
   "/Users/sb/Desktop/printf/libft/ft_strsub.c" "/Users/sb/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_strsub.c.o"
+  "/Users/sb/Desktop/printf/libft/ft_strsub_mod.c" "/Users/sb/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_strsub_mod.c.o"
   "/Users/sb/Desktop/printf/libft/ft_toupper.c" "/Users/sb/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/ft_toupper.c.o"
-  "/Users/sb/Desktop/printf/libft/itoa_base.c" "/Users/sb/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/libft/itoa_base.c.o"
   "/Users/sb/Desktop/printf/main.c" "/Users/sb/Desktop/printf/cmake-build-debug/CMakeFiles/printf.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
