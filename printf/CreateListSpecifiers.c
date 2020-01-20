@@ -1,7 +1,8 @@
 #include "printf.h"
 
 // Инициализация данных структуры (связанного списка)
-void init(t_spec *sp) {
+void init(t_spec *sp)
+{
 	sp->flags = (char *) malloc(sizeof(char) * 6); // строка для флагов +-0# и space
 	ft_bzero(sp->flags, ft_strlen(sp->flags));
 	sp->width = 0; // ширина
@@ -10,6 +11,8 @@ void init(t_spec *sp) {
 	sp->acc = 0; // точность.
 	sp->mod = 0; // модификаторы, пока работают только hh и h.
 	sp->type = 0; // тип
+	sp->bp_num = 0;
+	sp->ap_num = 0;
 	sp->isPercent = 0;
 	sp->text = NULL; // это для текста перед переменной (%s).
 	sp->next = NULL; // след узел

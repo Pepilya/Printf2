@@ -11,6 +11,8 @@ void ft_printf(const char *f, ...)
 	char c;
 	long long d;
 	unsigned long long int l;
+	long double fl;
+
 	va_list argp;
 	va_start(argp, f);
 	t_spec *sp = checkString(f); // читаем строку и записываем в список.
@@ -38,7 +40,14 @@ void ft_printf(const char *f, ...)
 			l = va_arg(argp, unsigned long long int);
 			printUnsignedNum(sp, l);
 		}
-		// ... добавть остальные типы!
+		if (sp->type == 'f')
+		{
+			if (sp->mod == 5)
+				fl = va_arg(argp, long double);
+			else
+				fl = (long double)va_arg(argp, double);
+			printDouble(sp, fl);
+		}
 		sp = sp->next;
 	}
 	ft_putstr(sp->text);

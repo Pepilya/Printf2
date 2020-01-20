@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/sb/Desktop/printf
+CMAKE_SOURCE_DIR = /Users/sb/Desktop/printf/in/printf
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/sb/Desktop/printf/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/sb/Desktop/printf/in/printf/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sb/Desktop/printf/cmake-build-debug/CMakeFiles /Users/sb/Desktop/printf/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sb/Desktop/printf/in/printf/cmake-build-debug/CMakeFiles /Users/sb/Desktop/printf/in/printf/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sb/Desktop/printf/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sb/Desktop/printf/in/printf/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -338,6 +338,33 @@ PrintString.s: PrintString.c.s
 PrintString.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/PrintString.c.s
 .PHONY : PrintString.c.s
+
+PutDouble.o: PutDouble.c.o
+
+.PHONY : PutDouble.o
+
+# target to build an object file
+PutDouble.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/PutDouble.c.o
+.PHONY : PutDouble.c.o
+
+PutDouble.i: PutDouble.c.i
+
+.PHONY : PutDouble.i
+
+# target to preprocess a source file
+PutDouble.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/PutDouble.c.i
+.PHONY : PutDouble.c.i
+
+PutDouble.s: PutDouble.c.s
+
+.PHONY : PutDouble.s
+
+# target to generate assembly for a file
+PutDouble.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/PutDouble.c.s
+.PHONY : PutDouble.c.s
 
 ft_printf.o: ft_printf.c.o
 
@@ -966,6 +993,9 @@ help:
 	@echo "... PrintString.o"
 	@echo "... PrintString.i"
 	@echo "... PrintString.s"
+	@echo "... PutDouble.o"
+	@echo "... PutDouble.i"
+	@echo "... PutDouble.s"
 	@echo "... ft_printf.o"
 	@echo "... ft_printf.i"
 	@echo "... ft_printf.s"

@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/sb/Desktop/printf/cmake-build-debug"/>
+				<Option working_dir="/Users/sb/Desktop/printf/in/printf/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/in/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/in/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/in/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/in/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/sb/Desktop/printf/cmake-build-debug"/>
+				<Option working_dir="/Users/sb/Desktop/printf/in/printf/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/in/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/in/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/in/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/in/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/sb/Desktop/printf/cmake-build-debug"/>
+				<Option working_dir="/Users/sb/Desktop/printf/in/printf/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/in/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/in/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/in/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/in/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="printf">
-				<Option output="/Users/sb/Desktop/printf/cmake-build-debug/printf" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/sb/Desktop/printf/cmake-build-debug"/>
+				<Option output="/Users/sb/Desktop/printf/in/printf/cmake-build-debug/printf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/sb/Desktop/printf/in/printf/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -50,15 +50,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 printf"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/in/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 printf"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/in/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/in/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/in/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="printf/fast">
-				<Option output="/Users/sb/Desktop/printf/cmake-build-debug/printf" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/sb/Desktop/printf/cmake-build-debug"/>
+				<Option output="/Users/sb/Desktop/printf/in/printf/cmake-build-debug/printf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/sb/Desktop/printf/in/printf/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -69,104 +69,107 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 printf/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/in/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 printf/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/in/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/in/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sb/Desktop/printf/in/printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/sb/Desktop/printf/AddSpecifiers.c">
+		<Unit filename="/Users/sb/Desktop/printf/in/printf/AddSpecifiers.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/sb/Desktop/printf/CreateListSpecifiers.c">
+		<Unit filename="/Users/sb/Desktop/printf/in/printf/CreateListSpecifiers.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/sb/Desktop/printf/ParsingString.c">
+		<Unit filename="/Users/sb/Desktop/printf/in/printf/ParsingString.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/sb/Desktop/printf/PrintChar.c">
+		<Unit filename="/Users/sb/Desktop/printf/in/printf/PrintChar.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/sb/Desktop/printf/PrintNumSigned.c">
+		<Unit filename="/Users/sb/Desktop/printf/in/printf/PrintNumSigned.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/sb/Desktop/printf/PrintNumSpecifiers.c">
+		<Unit filename="/Users/sb/Desktop/printf/in/printf/PrintNumSpecifiers.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/sb/Desktop/printf/PrintNumUnsigned.c">
+		<Unit filename="/Users/sb/Desktop/printf/in/printf/PrintNumUnsigned.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/sb/Desktop/printf/PrintString.c">
+		<Unit filename="/Users/sb/Desktop/printf/in/printf/PrintString.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/sb/Desktop/printf/ft_printf.c">
+		<Unit filename="/Users/sb/Desktop/printf/in/printf/PutDouble.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/sb/Desktop/printf/libft/ft_atoi.c">
+		<Unit filename="/Users/sb/Desktop/printf/in/printf/ft_printf.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/sb/Desktop/printf/libft/ft_bzero.c">
+		<Unit filename="/Users/sb/Desktop/printf/in/printf/libft/ft_atoi.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/sb/Desktop/printf/libft/ft_isalpha.c">
+		<Unit filename="/Users/sb/Desktop/printf/in/printf/libft/ft_bzero.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/sb/Desktop/printf/libft/ft_itoa.c">
+		<Unit filename="/Users/sb/Desktop/printf/in/printf/libft/ft_isalpha.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/sb/Desktop/printf/libft/ft_itoa_base.c">
+		<Unit filename="/Users/sb/Desktop/printf/in/printf/libft/ft_itoa.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/sb/Desktop/printf/libft/ft_itoa_base_long.c">
+		<Unit filename="/Users/sb/Desktop/printf/in/printf/libft/ft_itoa_base.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/sb/Desktop/printf/libft/ft_itoa_base_ulong.c">
+		<Unit filename="/Users/sb/Desktop/printf/in/printf/libft/ft_itoa_base_long.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/sb/Desktop/printf/libft/ft_putchar.c">
+		<Unit filename="/Users/sb/Desktop/printf/in/printf/libft/ft_itoa_base_ulong.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/sb/Desktop/printf/libft/ft_putchar_fd.c">
+		<Unit filename="/Users/sb/Desktop/printf/in/printf/libft/ft_putchar.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/sb/Desktop/printf/libft/ft_putstr.c">
+		<Unit filename="/Users/sb/Desktop/printf/in/printf/libft/ft_putchar_fd.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/sb/Desktop/printf/libft/ft_putstr_fd.c">
+		<Unit filename="/Users/sb/Desktop/printf/in/printf/libft/ft_putstr.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/sb/Desktop/printf/libft/ft_strchr.c">
+		<Unit filename="/Users/sb/Desktop/printf/in/printf/libft/ft_putstr_fd.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/sb/Desktop/printf/libft/ft_strdel.c">
+		<Unit filename="/Users/sb/Desktop/printf/in/printf/libft/ft_strchr.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/sb/Desktop/printf/libft/ft_strdup.c">
+		<Unit filename="/Users/sb/Desktop/printf/in/printf/libft/ft_strdel.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/sb/Desktop/printf/libft/ft_strlen.c">
+		<Unit filename="/Users/sb/Desktop/printf/in/printf/libft/ft_strdup.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/sb/Desktop/printf/libft/ft_strncpy.c">
+		<Unit filename="/Users/sb/Desktop/printf/in/printf/libft/ft_strlen.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/sb/Desktop/printf/libft/ft_strnew.c">
+		<Unit filename="/Users/sb/Desktop/printf/in/printf/libft/ft_strncpy.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/sb/Desktop/printf/libft/ft_strsub.c">
+		<Unit filename="/Users/sb/Desktop/printf/in/printf/libft/ft_strnew.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/sb/Desktop/printf/libft/ft_strsub_mod.c">
+		<Unit filename="/Users/sb/Desktop/printf/in/printf/libft/ft_strsub.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/sb/Desktop/printf/libft/ft_toupper.c">
+		<Unit filename="/Users/sb/Desktop/printf/in/printf/libft/ft_strsub_mod.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/sb/Desktop/printf/main.c">
+		<Unit filename="/Users/sb/Desktop/printf/in/printf/libft/ft_toupper.c">
 			<Option target="printf"/>
 		</Unit>
-		<Unit filename="/Users/sb/Desktop/printf/CMakeLists.txt">
+		<Unit filename="/Users/sb/Desktop/printf/in/printf/main.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/sb/Desktop/printf/in/printf/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

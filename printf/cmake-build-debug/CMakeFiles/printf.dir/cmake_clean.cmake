@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/printf.dir/PrintNumSpecifiers.c.o"
   "CMakeFiles/printf.dir/PrintNumUnsigned.c.o"
   "CMakeFiles/printf.dir/PrintString.c.o"
+  "CMakeFiles/printf.dir/PutDouble.c.o"
   "CMakeFiles/printf.dir/ft_printf.c.o"
   "CMakeFiles/printf.dir/libft/ft_atoi.c.o"
   "CMakeFiles/printf.dir/libft/ft_bzero.c.o"

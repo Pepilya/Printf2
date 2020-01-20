@@ -36,6 +36,8 @@ typedef struct          s_spec{
     char type;
     char *text;
     int  isPercent;
+	unsigned long bp_num;
+	long double ap_num;
     struct s_spec *next;
     struct s_spec *prev;
 }                       t_spec;
@@ -85,6 +87,10 @@ int isDecimal(t_spec *sp);
 void cutLength(t_spec *sp);
 void printWidth(t_spec *sp, char *toPrint);
 void printAccuracy(t_spec *sp, char *toPrint);
+
+/* PrintDouble.c */
+
+void printDouble(t_spec *sp, long double num);
 
 
 #endif
