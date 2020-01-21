@@ -48,6 +48,7 @@ int setAccuracy(t_spec *sp, const char *s, int i) {
 	int start;
 	int accFlagInd;
 
+	sp->isPoint = 1;
 	accFlagInd = 0;
 	i++;
 	while (s[i] && (s[i] == '0' || s[i] == '+' || s[i] == '-')) {

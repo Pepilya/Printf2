@@ -27,7 +27,7 @@ void ft_printf(const char *f, ...)
 		}
 		if (sp->type == 'c')
 		{
-			c = va_arg(argp, char);
+			c = va_arg(argp, int);
 			printChar(sp, c);
 		}
 		if (sp->type == 'd' || sp->type == 'i' || sp->type == 'p')
@@ -46,7 +46,7 @@ void ft_printf(const char *f, ...)
 				fl = va_arg(argp, long double);
 			else
 				fl = (long double)va_arg(argp, double);
-			printDouble(sp, fl);
+			getDouble(sp, fl);
 		}
 		sp = sp->next;
 	}

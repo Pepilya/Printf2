@@ -8,6 +8,7 @@ void init(t_spec *sp)
 	sp->width = 0; // ширина
 	sp->accFlag = (char *) malloc(sizeof(char) * 3); // отдельно флаги для точности, +- после точки, работают не так как обычные.
 	ft_bzero(sp->accFlag, ft_strlen(sp->accFlag));
+	sp->isPoint = 0;
 	sp->acc = 0; // точность.
 	sp->mod = 0; // модификаторы, пока работают только hh и h.
 	sp->type = 0; // тип

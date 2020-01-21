@@ -231,6 +231,33 @@ PrintChar.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/PrintChar.c.s
 .PHONY : PrintChar.c.s
 
+PrintDouble.o: PrintDouble.c.o
+
+.PHONY : PrintDouble.o
+
+# target to build an object file
+PrintDouble.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/PrintDouble.c.o
+.PHONY : PrintDouble.c.o
+
+PrintDouble.i: PrintDouble.c.i
+
+.PHONY : PrintDouble.i
+
+# target to preprocess a source file
+PrintDouble.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/PrintDouble.c.i
+.PHONY : PrintDouble.c.i
+
+PrintDouble.s: PrintDouble.c.s
+
+.PHONY : PrintDouble.s
+
+# target to generate assembly for a file
+PrintDouble.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/PrintDouble.c.s
+.PHONY : PrintDouble.c.s
+
 PrintNumSigned.o: PrintNumSigned.c.o
 
 .PHONY : PrintNumSigned.o
@@ -338,33 +365,6 @@ PrintString.s: PrintString.c.s
 PrintString.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/PrintString.c.s
 .PHONY : PrintString.c.s
-
-PutDouble.o: PutDouble.c.o
-
-.PHONY : PutDouble.o
-
-# target to build an object file
-PutDouble.c.o:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/PutDouble.c.o
-.PHONY : PutDouble.c.o
-
-PutDouble.i: PutDouble.c.i
-
-.PHONY : PutDouble.i
-
-# target to preprocess a source file
-PutDouble.c.i:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/PutDouble.c.i
-.PHONY : PutDouble.c.i
-
-PutDouble.s: PutDouble.c.s
-
-.PHONY : PutDouble.s
-
-# target to generate assembly for a file
-PutDouble.c.s:
-	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/PutDouble.c.s
-.PHONY : PutDouble.c.s
 
 ft_printf.o: ft_printf.c.o
 
@@ -771,6 +771,33 @@ libft/ft_strdup.c.s:
 	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_strdup.c.s
 .PHONY : libft/ft_strdup.c.s
 
+libft/ft_strjoin.o: libft/ft_strjoin.c.o
+
+.PHONY : libft/ft_strjoin.o
+
+# target to build an object file
+libft/ft_strjoin.c.o:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_strjoin.c.o
+.PHONY : libft/ft_strjoin.c.o
+
+libft/ft_strjoin.i: libft/ft_strjoin.c.i
+
+.PHONY : libft/ft_strjoin.i
+
+# target to preprocess a source file
+libft/ft_strjoin.c.i:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_strjoin.c.i
+.PHONY : libft/ft_strjoin.c.i
+
+libft/ft_strjoin.s: libft/ft_strjoin.c.s
+
+.PHONY : libft/ft_strjoin.s
+
+# target to generate assembly for a file
+libft/ft_strjoin.c.s:
+	$(MAKE) -f CMakeFiles/printf.dir/build.make CMakeFiles/printf.dir/libft/ft_strjoin.c.s
+.PHONY : libft/ft_strjoin.c.s
+
 libft/ft_strlen.o: libft/ft_strlen.c.o
 
 .PHONY : libft/ft_strlen.o
@@ -981,6 +1008,9 @@ help:
 	@echo "... PrintChar.o"
 	@echo "... PrintChar.i"
 	@echo "... PrintChar.s"
+	@echo "... PrintDouble.o"
+	@echo "... PrintDouble.i"
+	@echo "... PrintDouble.s"
 	@echo "... PrintNumSigned.o"
 	@echo "... PrintNumSigned.i"
 	@echo "... PrintNumSigned.s"
@@ -993,9 +1023,6 @@ help:
 	@echo "... PrintString.o"
 	@echo "... PrintString.i"
 	@echo "... PrintString.s"
-	@echo "... PutDouble.o"
-	@echo "... PutDouble.i"
-	@echo "... PutDouble.s"
 	@echo "... ft_printf.o"
 	@echo "... ft_printf.i"
 	@echo "... ft_printf.s"
@@ -1041,6 +1068,9 @@ help:
 	@echo "... libft/ft_strdup.o"
 	@echo "... libft/ft_strdup.i"
 	@echo "... libft/ft_strdup.s"
+	@echo "... libft/ft_strjoin.o"
+	@echo "... libft/ft_strjoin.i"
+	@echo "... libft/ft_strjoin.s"
 	@echo "... libft/ft_strlen.o"
 	@echo "... libft/ft_strlen.i"
 	@echo "... libft/ft_strlen.s"

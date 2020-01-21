@@ -1,9 +1,8 @@
 #include "printf.h"
 
 int main() {
-	long long int x = -9223372036854775800;
-	char *s = "HI I am here";
-	printf("%.30llu\n", x);
-	ft_printf("%.30llu\n", -9223372036854775800);
+	double x = 24.4567234234235234234235232383838383838427394827349827394872398472983430569304958209385;
+	printf("%+-.1000f\n", x);
+	ft_printf("%+-.1000f\n", x);
 	return 0;
 }

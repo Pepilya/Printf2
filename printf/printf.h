@@ -28,8 +28,10 @@
 }					t_list;*/
 
 typedef struct          s_spec{
+	va_list arg;
     char *flags;
     int  width;
+    int  isPoint;
     int  acc;
     char *accFlag;
     int  mod;
@@ -38,6 +40,7 @@ typedef struct          s_spec{
     int  isPercent;
 	unsigned long bp_num;
 	long double ap_num;
+	int sign;
     struct s_spec *next;
     struct s_spec *prev;
 }                       t_spec;
@@ -90,7 +93,7 @@ void printAccuracy(t_spec *sp, char *toPrint);
 
 /* PrintDouble.c */
 
-void printDouble(t_spec *sp, long double num);
+void getDouble(t_spec *sp, long double num);
 
 
 #endif

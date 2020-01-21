@@ -74,6 +74,6 @@ t_spec *checkString(const char *f) {
 		}
 	}
 	sp = getSpec(sp);
-	sp->text = ft_strsub_mod(f, startText, i - startText - 1, '%'); // может переделать ft_strsub (чтобы сразу убирал лишний %)
+	sp->text = ft_strsub_mod(f, startText, i - startText - 1, '%');
 	return sp;
 }

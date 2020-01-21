@@ -88,6 +88,9 @@
 		<Unit filename="/Users/sb/Desktop/printf/in/printf/PrintChar.c">
 			<Option target="printf"/>
 		</Unit>
+		<Unit filename="/Users/sb/Desktop/printf/in/printf/PrintDouble.c">
+			<Option target="printf"/>
+		</Unit>
 		<Unit filename="/Users/sb/Desktop/printf/in/printf/PrintNumSigned.c">
 			<Option target="printf"/>
 		</Unit>
@@ -98,9 +101,6 @@
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/sb/Desktop/printf/in/printf/PrintString.c">
-			<Option target="printf"/>
-		</Unit>
-		<Unit filename="/Users/sb/Desktop/printf/in/printf/PutDouble.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/sb/Desktop/printf/in/printf/ft_printf.c">
@@ -146,6 +146,9 @@
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/sb/Desktop/printf/in/printf/libft/ft_strdup.c">
+			<Option target="printf"/>
+		</Unit>
+		<Unit filename="/Users/sb/Desktop/printf/in/printf/libft/ft_strjoin.c">
 			<Option target="printf"/>
 		</Unit>
 		<Unit filename="/Users/sb/Desktop/printf/in/printf/libft/ft_strlen.c">
