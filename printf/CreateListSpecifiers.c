@@ -1,7 +1,7 @@
 #include "printf.h"
 
 // Инициализация данных структуры (связанного списка)
-void init(t_spec *sp)
+void init(t_spec *sp, va_list arg)
 {
 	sp->flags = (char *) malloc(sizeof(char) * 6); // строка для флагов +-0# и space
 	ft_bzero(sp->flags, ft_strlen(sp->flags));
@@ -21,17 +21,17 @@ void init(t_spec *sp)
 }
 
 // Создание структуры - связанного списка.
-t_spec *getSpec(t_spec *sp) {
+t_spec *getSpec(t_spec *sp, va_list arg) {
 	t_spec *tmp = NULL;
 	if (sp == NULL) {
 		sp = (t_spec *) malloc(sizeof(t_spec));
-		init(sp);
+		init(sp, arg);
 		return sp;
 	}
 	while (sp->next != NULL)
 		sp = sp->next;
 	sp->next = (t_spec *) malloc(sizeof(t_spec));
-	init(sp->next);
+	init(sp->next, arg);
 	tmp = sp;
 	sp = sp->next;
 	sp->prev = tmp;

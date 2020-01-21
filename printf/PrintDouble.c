@@ -80,7 +80,8 @@ char *doubleToString(t_spec *sp, unsigned long *arr)
 	return result;
 }
 
-void printDouble(t_spec *sp, char *toPrint) {
+void printDouble(t_spec *sp, char *toPrint)
+{
 	int i;
 	int len;
 
@@ -102,11 +103,16 @@ void printDouble(t_spec *sp, char *toPrint) {
 	}
 }
 
-void getDouble(t_spec *sp, long double num)
+void getDouble(t_spec *sp, va_list argp)
 {
 	unsigned long *arr;
 	char *str;
+	long double num;
 
+	if (sp->mod == 5)
+		num = va_arg(argp, long double);
+	else
+		num = (long double)va_arg(argp, double);
 	if (num < 0)
 	{
 		sp->sign = -1;

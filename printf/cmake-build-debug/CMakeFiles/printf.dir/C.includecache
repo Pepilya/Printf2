@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/Users/sb/Desktop/printf/in/printf/ft_printf.c
+printf.h
+/Users/sb/Desktop/printf/in/printf/printf.h
+stdarg.h
+-
+
 /Users/sb/Desktop/printf/in/printf/libft/libft.h
 unistd.h
 -
@@ -13,10 +19,6 @@ stdlib.h
 -
 string.h
 -
-
-/Users/sb/Desktop/printf/in/printf/main.c
-printf.h
-/Users/sb/Desktop/printf/in/printf/printf.h
 
 /Users/sb/Desktop/printf/in/printf/printf.h
 sys/types.h
@@ -30,6 +32,8 @@ unistd.h
 stdio.h
 -
 stdlib.h
+-
+stdarg.h
 -
 libft/libft.h
 /Users/sb/Desktop/printf/in/printf/libft/libft.h

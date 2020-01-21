@@ -1,6 +1,6 @@
 #include "printf.h"
 
-// ОБработка значения модификаторы. Приведение типа (h hh l ll) пока работают только h и hh
+// ОБработка значения модификаторы.
 char *changeNumType(t_spec *sp, long long int d)
 {
 	char *string;
@@ -23,20 +23,23 @@ char *changeNumType(t_spec *sp, long long int d)
 }
 
 // Печать целочисленных значений
-void printNum(t_spec *sp, long long int d)
+void printNum(t_spec *sp, va_list argp)
 {
 	char *toPrint;
 	int check;
+	long long int lli;
 
 	ft_putstr(sp->text);
-	toPrint = changeNumType(sp, d);
+	lli = va_arg(argp, long long int);
+	toPrint = changeNumType(sp, lli);
 	check = isDecimal(sp);
 	if (ft_strchr(sp->flags, '+') && check)
 	{
 		if (!ft_strchr(toPrint, '-'))
 			ft_putchar('+');
 		cutLength(sp);
-	} else if (ft_strchr(sp->flags, ' ') && check)
+	}
+	else if (ft_strchr(sp->flags, ' ') && check)
 	{
 		if (!ft_strchr(toPrint, '-'))
 			ft_putchar(' ');

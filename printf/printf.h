@@ -18,6 +18,7 @@
 # include <unistd.h>
 # include <stdio.h>
 # include <stdlib.h>
+# include <stdarg.h>
 # include "libft/libft.h"
 
 /*typedef struct		s_list
@@ -28,7 +29,6 @@
 }					t_list;*/
 
 typedef struct          s_spec{
-	va_list arg;
     char *flags;
     int  width;
     int  isPoint;
@@ -51,8 +51,8 @@ void ft_printf(const char *f, ...);
 
 /* ParsingString */
 
-t_spec *checkString(const char *f);
-t_spec *getSpec(t_spec *sp);
+t_spec *checkString(const char *f, va_list arg);
+t_spec *getSpec(t_spec *sp, va_list arg);
 int isSpec(const char *f, int i);
 void valid(const char *s, t_spec *sp);
 
@@ -65,23 +65,25 @@ int wrongSymbols(char c);
 void setMod(t_spec *sp, char *s, int i);
 
 /* CreateListSpecifiers.c */
-t_spec *getSpec(t_spec *sp);
-void init(t_spec *sp);
+t_spec *getSpec(t_spec *sp, va_list arg);
+void init(t_spec *sp, va_list arg);
 
 /* PrintChar */
-void printChar(t_spec *sp, char c);
+void getChar(t_spec *sp, va_list argp);
+void printWidthChar(t_spec *sp);
 
 /* PrintString */
-void printString(t_spec *sp, char *s);
+void getString(t_spec *sp, va_list argp);
+void printWidthString(t_spec *sp, char *s);
 
 /* PRINT INTEGER */
 
 /* PrintNumSigned.c */
-void printNum(t_spec *sp, long long int d);
+void printNum(t_spec *sp, va_list argp);
 char *changeNumType(t_spec *sp, long long int d);
 
 /* PrintNumUnsigned.c */
-void printUnsignedNum(t_spec *sp, unsigned long long int d);
+void printUnsignedNum(t_spec *sp, va_list argp);
 char *changeUnNumType(t_spec *sp, unsigned long long int d);
 void toUpper(char *str);
 
@@ -93,7 +95,7 @@ void printAccuracy(t_spec *sp, char *toPrint);
 
 /* PrintDouble.c */
 
-void getDouble(t_spec *sp, long double num);
+void getDouble(t_spec *sp, va_list argp);
 
 
 #endif

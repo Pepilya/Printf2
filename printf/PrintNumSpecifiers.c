@@ -34,7 +34,7 @@ void printWidth(t_spec *sp, char *toPrint) {
 		i = 0;
 		while (++i < (sp->width - len) + 1)
 			ft_putchar(' ');
-	} else {
+	} else{
 		i = 0;
 		while (++i < (sp->width - len) + 1) {
 			if (ft_strchr(sp->flags, '0') && !sp->acc)

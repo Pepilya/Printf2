@@ -1,8 +1,4 @@
-#include <stdarg.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include "printf.h"
-#include <stdio.h>
+# include "printf.h"
 
 void valid(const char *s, t_spec *sp)
 {
@@ -48,7 +44,7 @@ int isSpec(const char *f, int i) {
 	return 1;
 }
 
-t_spec *checkString(const char *f) {
+t_spec *checkString(const char *f, va_list arg) {
 	char *dup = NULL;
 	int i = 0;
 	int j = 0;
@@ -58,7 +54,7 @@ t_spec *checkString(const char *f) {
 	while (f[i]) {
 		if (f[i] == '%' && isSpec(f, i)) {
 			j = i;
-			sp = getSpec(sp); // получаем элемент списка
+			sp = getSpec(sp, arg); // получаем элемент списка
 			sp->text = ft_strsub_mod(f, startText, i - startText - 1, '%');// текст до спецификатора первой переменной (%s)
 			while (!ft_strchr(spec, f[i]) && f[i] && !wrongSymbols(f[i]))
 				i++;
@@ -73,7 +69,7 @@ t_spec *checkString(const char *f) {
 			ft_strdel(&dup);
 		}
 	}
-	sp = getSpec(sp);
+	sp = getSpec(sp, arg);
 	sp->text = ft_strsub_mod(f, startText, i - startText - 1, '%');
 	return sp;
 }

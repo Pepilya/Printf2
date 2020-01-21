@@ -38,20 +38,23 @@ char *changeUnNumType(t_spec *sp, unsigned long long int d)
 }
 
 // Печать целочисленных значений
-void printUnsignedNum(t_spec *sp, unsigned long long int d)
+void printUnsignedNum(t_spec *sp, va_list argp)
 {
 	char *toPrint;
 	int check;
+	unsigned long long int ulli;
 
 	ft_putstr(sp->text);
-	toPrint = changeUnNumType(sp, d);
+	ulli = va_arg(argp, unsigned long long int);
+	toPrint = changeUnNumType(sp, ulli);
 	check = isDecimal(sp);
 	if (ft_strchr(sp->flags, '+') && check)
 	{
 		if (!ft_strchr(toPrint, '-'))
 			ft_putchar('+');
 		cutLength(sp);
-	} else if (ft_strchr(sp->flags, ' ') && check)
+	}
+	else if (ft_strchr(sp->flags, ' ') && check)
 	{
 		if (!ft_strchr(toPrint, '-'))
 			ft_putchar(' ');
